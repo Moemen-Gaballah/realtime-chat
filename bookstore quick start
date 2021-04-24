@@ -1,0 +1,60 @@
+// install project laravel
+1- laravel new storeBook
+
+// install ui
+2- composer require laravel/ui
+
+// install Vue
+3- php artisan ui vue
+
+// Install Vue with auth
+4-  php artisan ui vue --auth
+
+// You also need to install npm and run it. so let's run both command:
+// Install NPM
+5- npm install
+
+6- npm run dev
+
+// make seeder for users
+7- php artisan make:seeder UserSeeder
+
+// run migration with seeds
+8-  php artisan migrate:fresh --seed
+
+// error  @ development: `mix` after run npm dev
+9- //First run:
+
+rm -rf node_modules
+rm package-lock.json yarn.lock
+npm cache clear --force
+
+//Then run the command:
+npm install cross-env
+npm install
+
+//and then you can also run:
+npm run dev
+
+// install adminlte
+npm install admin-lte@v3.0.0-alpha.2 --save
+
+// install fontawesome
+npm install --save @fortawesome/fontawesome-free
+
+
+// package and libraries used
+    // 1- image intervention
+    http://image.intervention.io/
+
+    // 2- vue progress bar
+    https://github.com/hilongjw/vue-progressbar
+
+    // 3- sweetalert2
+    https://sweetalert2.github.io/#download
+
+    // 4- vue router
+    https://router.vuejs.org/
+
+    // 5 laravel vue pagination
+    https://github.com/gilbitron/laravel-vue-pagination
